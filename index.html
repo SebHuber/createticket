@@ -1,2 +1,71 @@
-hello again and again
-2nd line too
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CRM | Create ticket</title>
+  <!-- add the font awesome link here -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon"href="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/webexIcon_roundEdge_4181441409677811.png" type="image/x-icon!">
+</head>
+<body>
+	<header>
+    <nav class="navMenu" id="myNavMenu">
+      <a href="index.html"><img id="logo" src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/webexIcon_roundEdge_4181441409677811.png" alt="Webex logo"></a>
+    </nav>
+  </header>
+
+  <!-- MAIN BODY CONTAINER -->
+  <div id="container">
+    <br>
+    <img src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/user_2543674822080336.png" style="width:100px;display:block;margin-left:auto;margin-right:auto;">
+    <div class="short"></div>
+    <p class="offsetTitles"><b>Hello <span id="name"></span></b></p>
+
+    <!-- WHEN NO ORDER IS QUERIED -->
+    <div id="defaultDiv">
+      <div id="preDiv">
+        <div class="text">
+          <p>Your details:<br>
+            <!-- CHANGE HERE -->
+            <span class="subFont">&nbsp;&nbsp;<i class="fas fa-caret-right green"></i>&nbsp;&nbsp;<b>User ID</b> - <span id="user"></span></span><br>
+            <span class="subFont">&nbsp;&nbsp;<i class="fas fa-caret-right green"></i>&nbsp;&nbsp;<b>Phone number</b> - <span id="msisdn"></span></span><br>
+            <span class="subFont">&nbsp;&nbsp;<i class="fas fa-caret-right green"></i>&nbsp;&nbsp;<b>Account level</b> - <span id="level"></span></span>
+            <br>
+            <br>
+            To create a case enter a brief description of the issue and then <span class="mobhide">click</span><span class="mobShow">tap</span> enter<br>
+        </div>
+        <div class="formBox">
+          <p>&nbsp;</p>
+          <input type="text" id="issue-enter" name="Issue" class="form" placeholder="Enter reason here">
+          <p>&nbsp;<a href="#" id="form-enter" >Enter</a><br></p>
+        </div>
+      </div>
+      <div id="postDiv" style="display:none;">
+        <div class="text" style="display:flex;align-items:center;justify-content:center;">
+          <p>Thanks - we've opened a case, and a new chat has been assigned to our team - you should receive a message to confirm a chat has been opened shortly, and our team will follow up with contact shortly<br><br>Just refresh the page to run the demo again</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+    <br>
+
+  </div>
+  <footer>
+    <span>
+      <p>Webex CPaaS Team &nbsp
+      <a href="https://cpaas.webex.com/" target="_blank"><i class="fas fa-globe"></i></a>
+      &nbsp
+      <a href="https://www.linkedin.com/company/webex-cpaas-solutions/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </p>
+    </span>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
